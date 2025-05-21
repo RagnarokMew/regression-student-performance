@@ -23,6 +23,22 @@ df['sleep_hours'] *= noise_sleep
 df['mental_health_rating'] += noise_mental_health
 df['exercise_frequency'] += noise_exercise_freq
 
+#############################
+## Ensure bounds of values ##
+#############################
+
+df.loc[df['attendance_percentage'] > 100, 'attendance_percentage'] = 100.00
+df.loc[df['attendance_percentage'] < 0, 'attendance_percentage'] = 0.00
+
+df.loc[df['sleep_hours'] > 24, 'sleep_hours'] = 24.00
+df.loc[df['sleep_hours'] < 0, 'sleep_hours'] = 0.00
+
+df.loc[df['mental_health_rating'] > 10, 'mental_health_rating'] = 10
+df.loc[df['mental_health_rating'] < 0, 'mental_health_rating'] = 0
+
+df.loc[df['exercise_frequency'] > 7, 'exercise_frequency'] = 7
+df.loc[df['exercise_frequency'] < 0, 'exercise_frequency'] = 0
+
 ######################################
 ## Creating masks for removing data ##
 ######################################
