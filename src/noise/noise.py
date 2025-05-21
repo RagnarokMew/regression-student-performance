@@ -43,4 +43,12 @@ df.loc[mask_social_media, 'social_media_hours'] = np.nan
 df.loc[mask_mental_health, 'mental_health_rating'] = np.nan
 df.loc[mask_netflix, 'netflix_hours'] = np.nan
 
+###########################################
+## Change types to handle missing values ##
+##   to preserve original column types   ##
+###########################################
+
+df['age'] = df['age'].astype('Int64')
+df['mental_health_rating'] = df['mental_health_rating'].astype('Int64')
+
 print(df.info())
