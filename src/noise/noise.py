@@ -9,6 +9,20 @@ df = pd.read_csv("../../data/original_student_habits_performance.csv")
 
 print(df.info())
 
+##################################
+## Introducing noise to dataset ##
+##################################
+
+noise_attendance = np.random.normal(-10, 10, size=len(df))
+noise_sleep = np.random.normal(0.9, 1.1, size=len(df))
+noise_mental_health = np.random.randint(-1, 2, size=len(df))
+noise_exercise_freq = np.random.randint(-1, 2, size=len(df))
+
+df['attendance_percentage'] += noise_attendance
+df['sleep_hours'] *= noise_sleep
+df['mental_health_rating'] += noise_mental_health
+df['exercise_frequency'] += noise_exercise_freq
+
 ######################################
 ## Creating masks for removing data ##
 ######################################
