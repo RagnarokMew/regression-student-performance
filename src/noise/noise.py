@@ -68,4 +68,4 @@ df['age'] = df['age'].astype('Int64')
 df['mental_health_rating'] = df['mental_health_rating'].astype('Int64')
 
 print(df.info())
-df.to_csv("../data/noised_student_habits_performance.csv")
+df.to_csv("../../data/noised_student_habits_performance.csv")
