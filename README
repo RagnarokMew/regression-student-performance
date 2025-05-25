@@ -275,11 +275,49 @@ max    100.000000
 
 #### Test
 
-//TODO: Add pngs
+Histograme valori numerice:
+
+![histogram](./raw/test/hist_age.png)
+![histogram](./raw/test/hist_attendance.png)
+![histogram](./raw/test/hist_exam.png)
+![histogram](./raw/test/hist_exercise.png)
+![histogram](./raw/test/hist_mental.png)
+![histogram](./raw/test/hist_netflix.png)
+![histogram](./raw/test/hist_sleep.png)
+![histogram](./raw/test/hist_social.png)
+![histogram](./raw/test/hist_study.png)
+
+Countplot valori categorice:
+
+![countplot](./raw/test/count_diet.png)
+![countplot](./raw/test/count_extracurricular.png)
+![countplot](./raw/test/count_gender.png)
+![countplot](./raw/test/count_internet.png)
+![countplot](./raw/test/count_parent.png)
+![countplot](./raw/test/count_work.png)
 
 #### Train
 
-//TODO: Add pngs
+Histograme valori numerice:
+
+![histogram](./raw/train/hist_age.png)
+![histogram](./raw/train/hist_attendance.png)
+![histogram](./raw/train/hist_exam.png)
+![histogram](./raw/train/hist_exercise.png)
+![histogram](./raw/train/hist_mental.png)
+![histogram](./raw/train/hist_netflix.png)
+![histogram](./raw/train/hist_sleep.png)
+![histogram](./raw/train/hist_social.png)
+![histogram](./raw/train/hist_study.png)
+
+Countplot valori categorice:
+
+![countplot](./raw/train/count_diet.png)
+![countplot](./raw/train/count_extracurricular.png)
+![countplot](./raw/train/count_gender.png)
+![countplot](./raw/train/count_internet.png)
+![countplot](./raw/train/count_parent.png)
+![countplot](./raw/train/count_work.png)
 
 ### Outliers
 
