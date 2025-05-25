@@ -13,5 +13,7 @@ features = [ col for col in numeric.columns if col != 'exam_score' ]
 for feature in features:
     sns.scatterplot(data=numeric, x=feature, y='exam_score', hue='exam_score', palette='coolwarm')
     plt.title(f'{feature} by exam_score')
-    plt.savefig(f"scatter_{feature}.png")
+    plt.legend(title='exam_score', bbox_to_anchor=(1.05, 1), loc='upper left', fontsize='small', title_fontsize='medium')
+    plt.tight_layout()
+    plt.savefig(f"../../raw/scatter_{feature}.png")
     plt.close()
