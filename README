@@ -12,13 +12,37 @@ examen stiind mai multe informatii despre viata acestuia.
 
 ### Introducere date lipsa si noise
 
-Am pornit de la un dataset complet de pe kaggle (https://www.kaggle.com/datasets/jayaantanaath/student-habits-vs-academic-performance) 
+Am pornit de la un dataset complet de pe kaggle 
+(https://www.kaggle.com/datasets/jayaantanaath/student-habits-vs-academic-performance) 
 si am introdus noise in mai multe coloane si pentru altele am scos mai multe
 valori din coloane pe baza unui procentaj. Dupa aceste operatii am salvat
 datasetul cu noise pentru restul operatiilor.
 
-// TODO: ADD Noise explanation
-// TODO: ADD Data removal explanation
+Pentru a adauga noise la dataset am adaugat valori uniforme sau am redus/marit 
+valoare proportional cu valuare feature-ului respectiv (pentru a simula erori 
+de masura, dar in special pentru ca asa cere cerinta). Valorile au fost modificate 
+in felul urmator: 
+
+- attendance_percentage: s-a modificat cu valori random intre [-10, 10]
+- sleep_hours: s-a modificat cu [-10%, 10%]
+- mental_health: fiecare valoare s-a modificat random cu valori intre [-1, 2]
+- exercise_frequency: fiecare valoare s-a modificat random cu valori intre [-1, 2]
+
+Dupa aplicarea de noise am asigurat faptul ca nicio valoare nu a trecut de limita 
+superioara sau inferioara respectiva feature-ului (exemplu: nu se poate dormi mai putin 
+de 0 ore sau mai mult de 24).
+
+Pentru a face remove la date am creat o masca cu valori de la 0, 1 si am ales
+o valoare (procent) sub care s-ar elimina elementele (s-ar pune na). Procentele
+sunt urmatoarele:
+
+- study_hours: 5%
+- extracurricular_activity: 20%
+- diet_quality: 10%
+- mental_health: 15%
+- age: 5%
+- social_media: 10%
+- netflix: 25%
 
 ### Impartire dataset in train si test
 
@@ -26,6 +50,9 @@ Utilizant ``train_test_split`` din ``sklearn`` am impartit datasetul in cel
 de training si cel de test (75% training, 25% test). Pentru a salva dataseturile 
 am concatenat features cu coloana de target salvand dataseturile pentru a le 
 procesa.
+
+Aceste operatii s-au facut pe fiecare dataset (train & test) individual, nu pe 
+datasetul mare.
 
 ### Procesare suplimentara - conversie date categorice
 
@@ -296,7 +323,7 @@ Pentru a detecta outliers am utilizat IQR (25th & 75th percentile)
 
 //TODO
 
-## Antrenatre
+## Antrenare
 
 Pentru antrenament am utilizat modelul ``LinearRegression`` din ``sklearn`` si 
 pentru metrica am utilizat rmse (root-mean-squared-error). Dupa antrenare am 
