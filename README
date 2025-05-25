@@ -211,7 +211,18 @@ min     23.100000
 max    100.000000
 ```
 
-// TODO: Analiza
+Se observa ca dataset-ul de test contine 250 de exemple, varsta fiin intre 17 
+si 24 de ani cu o medie de 20.6 de ani, varsta asteptata pentru studenti. 
+Majoritatea studentilor sunt de gen masculin, dar cu mean de 0.504 si codificarea 
+precedenta este clar ca si aceasta este normala. Valorile de studiat, social media 
+netflix sunt intr-un range rezonabil / de asteptat. La orele de somn se observa un
+outlier cu 23.26 ore de somn, insa media este de 6.3 ore, care poate sa fie considerat intr-un range rezonabil. 
+Dieta, calitatea internetului, frecventa exercitiului sunt in range normal. 
+Personal, nivelul de educatie al parintilor este sub asteptari (intrucat majoritatea 
+au parinti cu educatie de nivel maxim de liceu), dar restul valorilor se incadreaza 
+in asteptari (participare slaba la activitati extracuriculare, sanatatea mentala, 
+punctajul la examen). Prezenta la cursuri este complet in asteptari si la fel este 
+si numarul celor care muncesc part time (imi imaginez ca este super greu part time + facultate).
 
 #### Training
 
@@ -269,7 +280,18 @@ min     18.400000
 max    100.000000
 ```
 
-//TODO: Analiza
+Se observa ca dataset-ul de test contine 250 de exemple, varsta fiin intre 17 
+si 24 de ani cu o medie de 20.4 de ani, varsta asteptata pentru studenti. 
+Majoritatea studentilor sunt de gen feminin, dar cu mean de 0.585 si codificarea 
+precedenta este clar ca si aceasta este normala. Valorile de studiat, social media 
+netflix sunt intr-un range rezonabil / de asteptat. La orele de somn se observa un
+outlier cu 24 ore de somn, insa cu un mean de 6.6 ore, care poate sa fie considerat
+intr-un range rezonabil. Personal, nivelul de educatie al parintilor este tot sub asteptari
+(chiar daca majoritatea au parinti cu facultate, insa mean-ul este tot sub 2, ceea ce inseamna
+ca cei cu parinti fara educatie trag valoarea in jos), dar restul valorilor se incadreaza 
+in asteptari (participare slaba la activitati extracuriculare, sanatatea mentala, 
+punctajul la examen). Prezenta la cursuri este complet in asteptari si la fel este 
+si numarul celor care muncesc part time (imi imaginez ca este super greu part time + facultate).
 
 ### Distributia variabilelor
 
