@@ -26,3 +26,21 @@ Utilizant ``train_test_split`` din ``sklearn`` am impartit datasetul in cel
 de training si cel de test (75% training, 25% test). Pentru a salva dataseturile 
 am concatenat features cu coloana de target salvand dataseturile pentru a le 
 procesa.
+
+### Procesare suplimentara
+
+In analiza datasetului am observat prezenta a 6 features categorice care trebuie 
+convertite in valori numerice:
+
+- gender, 
+- part_time_job
+- diet_quality
+- parental_education
+- internet_quality
+- extracurricular_participation
+
+// TODO: explain conversion
+
+## EDA
+
+// TODO: section
