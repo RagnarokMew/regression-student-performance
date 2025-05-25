@@ -6,7 +6,7 @@ import seaborn as sns
 
 csv_path = sys.argv[1]
 
-df = pd.read_csv(csv_path).dropna()
+df = pd.read_csv(csv_path)
 
 ##############################
 ## Discrete Values Plotting ##
