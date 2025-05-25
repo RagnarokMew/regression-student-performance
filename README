@@ -217,3 +217,81 @@ max    100.000000
 ```
 
 //TODO: Analiza
+
+### Distributia variabilelor
+
+#### Test
+
+//TODO: Add pngs
+
+#### Train
+
+//TODO: Add pngs
+
+### Outliers
+
+Pentru a detecta outliers am utilizat IQR (25th & 75th percentile)
+
+#### Test
+
+- age outlier count: 0
+- gender outlier count: 0
+- study_hours_per_day outlier count: 6
+- social_media_hours outlier count: 2
+- netflix_hours outlier count: 6
+- part_time_job outlier count: 61
+- attendance_percentage outlier count: 0
+- sleep_hours outlier count: 0
+- diet_quality outlier count: 0
+- exercise_frequency outlier count: 0
+- parental_education_level outlier count: 0
+- internet_quality outlier count: 0
+- mental_health_rating outlier count: 0
+- extracurricular_participation outlier count: 0
+- exam_score outlier count: 0
+
+//TODO: Analiza
+
+#### Train
+
+- age outlier count: 0
+- gender outlier count: 0
+- study_hours_per_day outlier count: 6
+- social_media_hours outlier count: 4
+- netflix_hours outlier count: 21
+- part_time_job outlier count: 154
+- attendance_percentage outlier count: 3
+- sleep_hours outlier count: 0
+- diet_quality outlier count: 0
+- exercise_frequency outlier count: 0
+- parental_education_level outlier count: 0
+- internet_quality outlier count: 0
+- mental_health_rating outlier count: 0
+- extracurricular_participation outlier count: 178
+- exam_score outlier count: 1
+
+//TODO: Analiza
+
+### Corelatie
+
+#### Test
+
+//TODO: Add png
+
+#### Train
+
+//TODO: Add png
+
+### Relatie features - target
+
+#### Test
+
+//TODO: add pngs
+
+#### Train
+
+//TODO: add pngs
+
+### Interpretari si Comentarii Personale
+
+//TODO
