@@ -94,6 +94,10 @@ pot avea o relevanta pentru performanta pe timpul examenului (exemplu: mental_he
 
 Analog cu datasetul de training.
 
+IMPORTANT: Metoda utilizata pentru umplerea valorilor nu va functiona in
+pandas 3.0, deoarece behaviorul functiilor utilizate se va schimba. (source: 
+warning la rularea programului)
+
 ## EDA
 
 // TODO: section
