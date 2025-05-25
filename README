@@ -43,27 +43,56 @@ convertite in valori numerice:
 
 ### Rezolvare date lipsa
 
-Din analiza EDA a dataseturilor am observat urmatoarele lucruri la dataseturi
+Din analiza EDA a dataseturilor am observat urmatoarele lucruri la dataseturi:
 
 #### Test dataset
 
-age: 9 / 3.6% missing values
-gender: 0 / 0.0% missing values
-study_hours_per_day: 15 / 6.0% missing values
-social_media_hours: 23 / 9.2% missing values
-netflix_hours: 56 / 22.4% missing values
-part_time_job: 0 / 0.0% missing values
-attendance_percentage: 0 / 0.0% missing values
-sleep_hours: 0 / 0.0% missing values
-diet_quality: 28 / 11.2% missing values
-exercise_frequency: 0 / 0.0% missing values
-parental_education_level: 21 / 8.4% missing values
-internet_quality: 0 / 0.0% missing values
-mental_health_rating: 36 / 14.4% missing values
-extracurricular_participation: 39 / 15.6% missing values
-exam_score: 0 / 0.0% missing values
+- age: 9 / 3.6% missing values
+- gender: 0 / 0.0% missing values
+- study_hours_per_day: 15 / 6.0% missing values
+- social_media_hours: 23 / 9.2% missing values
+- netflix_hours: 56 / 22.4% missing values
+- part_time_job: 0 / 0.0% missing values
+- attendance_percentage: 0 / 0.0% missing values
+- sleep_hours: 0 / 0.0% missing values
+- diet_quality: 28 / 11.2% missing values
+- exercise_frequency: 0 / 0.0% missing values
+- parental_education_level: 21 / 8.4% missing values
+- internet_quality: 0 / 0.0% missing values
+- mental_health_rating: 36 / 14.4% missing values
+- extracurricular_participation: 39 / 15.6% missing values
+- exam_score: 0 / 0.0% missing values
+
+Pentru social_media, netflix_hours, study hours care sunt valori numerice
+importante valorile lipsa se inlocuiesc cu medianul.
+
+Pentru age care lipseste putin se inlocuieste tot cu medianul.
+
+Pentru diet quality, parental education, mental health si extracurricular 
+o sa inlocuiesc cu cea mai comuna valoare intrucat sunt cele mai comune valori 
+deoarece sunt valori categorice. Un alt motiv pentru acest lucru este faptul ca
+nu sunt lipsa destule valori pentru a face drop la coloana, si aceste categorii 
+pot avea o relevanta pentru performanta pe timpul examenului (exemplu: mental_health_rating).
 
 #### Train dataset
+
+- age: 33 / 4.4% missing values
+- gender: 0 / 0.0% missing values
+- study_hours_per_day: 37 / 4.93% missing values
+- social_media_hours: 72 / 9.6% missing values
+- netflix_hours: 191 / 25.47% missing values
+- part_time_job: 0 / 0.0% missing values
+- attendance_percentage: 0 / 0.0% missing values
+- sleep_hours: 0 / 0.0% missing values
+- diet_quality: 67 / 8.93% missing values
+- exercise_frequency: 0 / 0.0% missing values
+- parental_education_level: 70 / 9.33% missing values
+- internet_quality: 0 / 0.0% missing values
+- mental_health_rating: 113 / 15.07% missing values
+- extracurricular_participation: 167 / 22.27% missing values
+- exam_score: 0 / 0.0% missing values
+
+Analog cu datasetul de training.
 
 ## EDA
 
