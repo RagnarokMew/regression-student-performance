@@ -296,6 +296,28 @@ Pentru a detecta outliers am utilizat IQR (25th & 75th percentile)
 
 //TODO
 
-## Bonus:
+## Antrenatre
+
+Pentru antrenament am utilizat modelul ``LinearRegression`` din ``sklearn`` si 
+pentru metrica am utilizat rmse (root-mean-squared-error). Dupa antrenare am 
+afisat eroarea si am creat doua grafice: unul in care se compara valoarea reala
+cu cea prezisa, celalalt fiind o comparatie intre valoarea prezisa si restul
+diferentei dintre adevarat si prezis.
+
+``Root mean squared error: 1.4586042324581607e-14``
+
+Grafic eroare (predictie vs realitate):
+![Grafic eroare](./raw/error_graph.png)
+
+Grafic rest (predictie vs rest):
+![Grafic rest](./raw/residual_graph.png)
+
+Dupa cum se poate observa in primul grafic eroarea este mica, dar existenta, 
+iar in al doilea se observa ca modelul supraestimeaza studentii cu rezultate 
+foarte mici si subestimeaza unii studenti cu note foarte mici. Totusi, in 
+distributia resturilor nu se poate spune ca exista un pattern fata de ``y = 0``.
+Pe baza erorii si pe baza graficelor concluzionez ca modelul functioneaza corect.
+
+## Bonus git:
 
 Repo-ul este public la linkul: https://github.com/RagnarokMew/regression-student-performance
