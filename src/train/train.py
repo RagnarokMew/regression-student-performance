@@ -27,3 +27,12 @@ plt.title('Error graph')
 plt.legend()
 plt.savefig("../../raw/error_graph.png")
 plt.close()
+
+residual = y_test - y_pred
+plt.scatter(y_pred, residual)
+plt.axhline(y=0, color='black', linestyle='--')
+plt.xlabel('Model predictions')
+plt.ylabel('Residuals')
+plt.title('Residual predictions')
+plt.savefig("../../raw/residual_graph.png")
+plt.close()
