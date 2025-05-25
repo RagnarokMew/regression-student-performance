@@ -374,13 +374,17 @@ Mai jos sunt boxplots pt outliers:
 ![outplier_boxplot](./raw/train/outlier_study_hours_per_day.png)
 
 
-### Corelatie
+### Corelatie - Matrici corelatie
 
 #### Test
+
+Matrice corelare:
 
 ![Matrice corelare test](./raw/test/corr_heat.png)
 
 #### Train
+
+Matrice corelare:
 
 ![Matrice corelare test](./raw/train/corr_heat.png)
 
@@ -388,11 +392,41 @@ Mai jos sunt boxplots pt outliers:
 
 #### Test
 
-//TODO: add pngs
+Legaturi feature target:
+
+![scatter_plot](./raw/test/scatter_age.png)
+![scatter_plot](./raw/test/scatter_attendance_percentage.png)
+![scatter_plot](./raw/test/scatter_diet_quality.png)
+![scatter_plot](./raw/test/scatter_exercise_frequency.png)
+![scatter_plot](./raw/test/scatter_extracurricular_participation.png)
+![scatter_plot](./raw/test/scatter_gender.png)
+![scatter_plot](./raw/test/scatter_internet_quality.png)
+![scatter_plot](./raw/test/scatter_mental_health_rating.png)
+![scatter_plot](./raw/test/scatter_netflix_hours.png)
+![scatter_plot](./raw/test/scatter_parental_education_level.png)
+![scatter_plot](./raw/test/scatter_part_time_job.png)
+![scatter_plot](./raw/test/scatter_sleep_hours.png)
+![scatter_plot](./raw/test/scatter_social_media_hours.png)
+![scatter_plot](./raw/test/scatter_study_hours_per_day.png)
 
 #### Train
 
-//TODO: add pngs
+Legaturi feature target:
+
+![scatter_plot](./raw/train/scatter_age.png)
+![scatter_plot](./raw/train/scatter_attendance_percentage.png)
+![scatter_plot](./raw/train/scatter_diet_quality.png)
+![scatter_plot](./raw/train/scatter_exercise_frequency.png)
+![scatter_plot](./raw/train/scatter_extracurricular_participation.png)
+![scatter_plot](./raw/train/scatter_gender.png)
+![scatter_plot](./raw/train/scatter_internet_quality.png)
+![scatter_plot](./raw/train/scatter_mental_health_rating.png)
+![scatter_plot](./raw/train/scatter_netflix_hours.png)
+![scatter_plot](./raw/train/scatter_parental_education_level.png)
+![scatter_plot](./raw/train/scatter_part_time_job.png)
+![scatter_plot](./raw/train/scatter_sleep_hours.png)
+![scatter_plot](./raw/train/scatter_social_media_hours.png)
+![scatter_plot](./raw/train/scatter_study_hours_per_day.png)
 
 ### Interpretari si Comentarii Personale
 
