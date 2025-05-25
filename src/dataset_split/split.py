@@ -28,8 +28,8 @@ print(f"Test target size: {y_test.shape}")
 ## Merging the features and targets for processing ##
 #####################################################
 
-df_train = pd.concat([X_train, y_train])
-df_test = pd.concat([X_test, y_test])
+df_train = pd.concat([X_train, y_train], axis=1)
+df_test = pd.concat([X_test, y_test], axis=1)
 
 df_train.to_csv("../../data/noised_train.csv", index=False)
 df_test.to_csv("../../data/noised_test.csv", index=False)
