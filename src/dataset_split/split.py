@@ -32,3 +32,13 @@ X_train.to_csv("../../data/X_train.csv", index=False)
 y_train.to_csv("../../data/y_train.csv", index=False)
 X_test.to_csv("../../data/X_test.csv", index=False)
 y_test.to_csv("../../data/y_test.csv", index=False)
+
+#####################################################
+## Merging the features and targets for processing ##
+#####################################################
+
+df_train = pd.concat([X_train, y_train])
+df_test = pd.concat([X_test, y_test])
+
+df_train.to_csv("../../data/noised_train.csv", index=False)
+df_test.to_csv("../../data/noised_test.csv", index=False)
