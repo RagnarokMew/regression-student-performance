@@ -7,3 +7,22 @@ SIMION ŞTEFAN, seria CC, grupa 314CC
 
 Am ales sa rezolv o problema de regresie, care prezice scorul unui student in 
 examen stiind mai multe informatii despre viata acestuia.
+
+## Constructie Dataset
+
+### Introducere date lipsa si noise
+
+Am pornit de la un dataset complet de pe kaggle (https://www.kaggle.com/datasets/jayaantanaath/student-habits-vs-academic-performance) 
+si am introdus noise in mai multe coloane si pentru altele am scos mai multe
+valori din coloane pe baza unui procentaj. Dupa aceste operatii am salvat
+datasetul cu noise pentru restul operatiilor.
+
+// TODO: ADD Noise explanation
+// TODO: ADD Data removal explanation
+
+### Impartire dataset in train si test
+
+Utilizant ``train_test_split`` din ``sklearn`` am impartit datasetul in cel 
+de training si cel de test (75% training, 25% test). Pentru a salva dataseturile 
+am concatenat features cu coloana de target salvand dataseturile pentru a le 
+procesa.
