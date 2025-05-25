@@ -27,7 +27,7 @@ de training si cel de test (75% training, 25% test). Pentru a salva dataseturile
 am concatenat features cu coloana de target salvand dataseturile pentru a le 
 procesa.
 
-### Procesare suplimentara
+### Procesare suplimentara - conversie date categorice
 
 In analiza datasetului am observat prezenta a 6 features categorice care trebuie 
 convertite in valori numerice:
@@ -35,11 +35,35 @@ convertite in valori numerice:
 - gender, 
 - part_time_job
 - diet_quality
-- parental_education
+- parental_education_level
 - internet_quality
 - extracurricular_participation
 
 // TODO: explain conversion
+
+### Rezolvare date lipsa
+
+Din analiza EDA a dataseturilor am observat urmatoarele lucruri la dataseturi
+
+#### Test dataset
+
+age: 9 / 3.6% missing values
+gender: 0 / 0.0% missing values
+study_hours_per_day: 15 / 6.0% missing values
+social_media_hours: 23 / 9.2% missing values
+netflix_hours: 56 / 22.4% missing values
+part_time_job: 0 / 0.0% missing values
+attendance_percentage: 0 / 0.0% missing values
+sleep_hours: 0 / 0.0% missing values
+diet_quality: 28 / 11.2% missing values
+exercise_frequency: 0 / 0.0% missing values
+parental_education_level: 21 / 8.4% missing values
+internet_quality: 0 / 0.0% missing values
+mental_health_rating: 36 / 14.4% missing values
+extracurricular_participation: 39 / 15.6% missing values
+exam_score: 0 / 0.0% missing values
+
+#### Train dataset
 
 ## EDA
 
