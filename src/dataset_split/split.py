@@ -24,15 +24,6 @@ print(f"Train target size: {y_train.shape}")
 print(f"Test size: {X_test.shape}")
 print(f"Test target size: {y_test.shape}")
 
-####################################
-## Saving train and test datasets ##
-####################################
-
-X_train.to_csv("../../data/X_train.csv", index=False)
-y_train.to_csv("../../data/y_train.csv", index=False)
-X_test.to_csv("../../data/X_test.csv", index=False)
-y_test.to_csv("../../data/y_test.csv", index=False)
-
 #####################################################
 ## Merging the features and targets for processing ##
 #####################################################
