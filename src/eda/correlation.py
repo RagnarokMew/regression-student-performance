@@ -16,7 +16,7 @@ sns.heatmap(corr_target,
             cmap='Blues',
             linewidths=0.5)
 plt.title('Correlation matrix heatmap')
-plt.xticks(rotation=45)
+plt.xticks(rotation=90)
 plt.tight_layout()
 plt.title('Correlation matrix heatmap')
 plt.savefig("../../raw/corr_heat.png")
