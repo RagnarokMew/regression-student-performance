@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 csv_path = sys.argv[1]
 
-df = pd.read_csv(csv_path)
+df = pd.read_csv(csv_path).dropna()
 
 ##############################
 ## Discrete Values Plotting ##
@@ -58,6 +58,40 @@ plt.grid(True, alpha=0.3)
 plt.savefig("../../raw/hist_study.png")
 plt.close()
 
-##
-## Categorial Values Plotting
-##
+
+plt.hist(df['social_media_hours'], bins='auto', align='mid', color='lightskyblue', edgecolor='black')
+plt.title('Social media hours ditribution of students')
+plt.xlabel('Social media hours per day')
+plt.ylabel('Frequency')
+plt.grid(True, alpha=0.3)
+plt.savefig("../../raw/hist_social.png")
+plt.close()
+
+
+plt.hist(df['netflix_hours'], bins='auto', align='mid', color='lightskyblue', edgecolor='black')
+plt.title('Netflix hours ditribution of students')
+plt.xlabel('Netflix hours per day')
+plt.ylabel('Frequency')
+plt.grid(True, alpha=0.3)
+plt.savefig("../../raw/hist_netflix.png")
+plt.close()
+
+plt.hist(df['attendance_percentage'], bins='auto', align='mid', color='lightskyblue', edgecolor='black')
+plt.title('Attendance percentage ditribution of students')
+plt.xlabel('Attendance percentage')
+plt.ylabel('Frequency')
+plt.grid(True, alpha=0.3)
+plt.savefig("../../raw/hist_attendance.png")
+plt.close()
+
+plt.hist(df['sleep_hours'], bins='auto', align='mid', color='lightskyblue', edgecolor='black')
+plt.title('Sleep hours ditribution of students')
+plt.xlabel('Sleep hours per day')
+plt.ylabel('Frequency')
+plt.grid(True, alpha=0.3)
+plt.savefig("../../raw/hist_sleep.png")
+plt.close()
+
+################################
+## Categorial Values Plotting ##
+################################
