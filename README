@@ -57,16 +57,42 @@ datasetul mare.
 ### Procesare suplimentara - conversie date categorice
 
 In analiza datasetului am observat prezenta a 6 features categorice care trebuie 
-convertite in valori numerice:
+convertite in valori numerice in urmatorul fel:
 
-- gender, 
+- gender
+
+       - 'Male': 0,
+       - 'Female': 1
+       - 'Other': 2
+
 - part_time_job
+
+       - 'Yes': 1
+       - 'No': 0
+
 - diet_quality
+
+       - 'Poor': 0
+       - 'Fair': 1
+       - 'Good': 2
+
 - parental_education_level
+
+       - 'None': 0
+       - 'High School': 1
+       - 'Bachelor': 2
+       - 'Master': 3
+
 - internet_quality
+
+       - 'Poor': 0
+       - 'Average': 1
+       - 'Good': 2
+
 - extracurricular_participation
 
-// TODO: explain conversion
+       - 'Yes': 1
+       - 'No': 0
 
 ### Rezolvare date lipsa
 
