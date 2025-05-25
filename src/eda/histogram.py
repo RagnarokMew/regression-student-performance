@@ -2,6 +2,7 @@ import sys
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 csv_path = sys.argv[1]
 
@@ -58,7 +59,6 @@ plt.grid(True, alpha=0.3)
 plt.savefig("../../raw/hist_study.png")
 plt.close()
 
-
 plt.hist(df['social_media_hours'], bins='auto', align='mid', color='lightskyblue', edgecolor='black')
 plt.title('Social media hours ditribution of students')
 plt.xlabel('Social media hours per day')
@@ -66,7 +66,6 @@ plt.ylabel('Frequency')
 plt.grid(True, alpha=0.3)
 plt.savefig("../../raw/hist_social.png")
 plt.close()
-
 
 plt.hist(df['netflix_hours'], bins='auto', align='mid', color='lightskyblue', edgecolor='black')
 plt.title('Netflix hours ditribution of students')
@@ -95,3 +94,47 @@ plt.close()
 ################################
 ## Categorial Values Plotting ##
 ################################
+
+sns.set_style('whitegrid')
+
+sns.countplot(data=df, x='gender', color='#9CC9FF', edgecolor='black')
+plt.title('Gender distribution of students')
+plt.xlabel('Gender')
+plt.ylabel('Count')
+plt.savefig("../../raw/count_gender.png")
+plt.close()
+
+sns.countplot(data=df, x='part_time_job', color='#9CC9FF', edgecolor='black')
+plt.title('Working part time distribution of students')
+plt.xlabel('Working')
+plt.ylabel('Count')
+plt.savefig("../../raw/count_work.png")
+plt.close()
+
+sns.countplot(data=df, x='diet_quality', color='#9CC9FF', edgecolor='black')
+plt.title('Diet quality distribution of students')
+plt.xlabel('Diet quality')
+plt.ylabel('Count')
+plt.savefig("../../raw/count_diet.png")
+plt.close()
+
+sns.countplot(data=df, x='parental_education_level', color='#9CC9FF', edgecolor='black')
+plt.title('Parental education level distribution of students')
+plt.xlabel('Parent education level')
+plt.ylabel('Count')
+plt.savefig("../../raw/count_parent.png")
+plt.close()
+
+sns.countplot(data=df, x='internet_quality', color='#9CC9FF', edgecolor='black')
+plt.title('Internet quality distribution of students')
+plt.xlabel('Internet quality')
+plt.ylabel('Count')
+plt.savefig("../../raw/count_internet.png")
+plt.close()
+
+sns.countplot(data=df, x='extracurricular_participation', color='#9CC9FF', edgecolor='black')
+plt.title('Extracurricular participation distribution of students')
+plt.xlabel('Extracurricular participation')
+plt.ylabel('Count')
+plt.savefig("../../raw/count_extracurricular.png")
+plt.close()
