@@ -303,7 +303,28 @@ Pentru a detecta outliers am utilizat IQR (25th & 75th percentile)
 - extracurricular_participation outlier count: 0
 - exam_score outlier count: 0
 
-//TODO: Analiza
+'Outlierii' din part_time nu pot fi considerati ca fiind cu adevarat outlieri, 
+deoarece nr celor care lucreaza este mult mai mic decat al celor care nu muncesc. 
+Avand in vedere size-ul dataset-ului de antrenament este de 250, consider ca nu 
+este nevoie sa scapam de restul (in special considerand ca outlierii se afla in 
+features care au importanta destul de mare pentru target feature) in speranta 
+ca modelul va putea face predictii mai accurate.
+
+![outplier_boxplot](./raw/test/outlier_age.png)
+![outplier_boxplot](./raw/test/outlier_attendance_percentage.png)
+![outplier_boxplot](./raw/test/outlier_diet_quality.png)
+![outplier_boxplot](./raw/test/outlier_exam_score.png)
+![outplier_boxplot](./raw/test/outlier_exercise_frequency.png)
+![outplier_boxplot](./raw/test/outlier_extracurricular_participation.png)
+![outplier_boxplot](./raw/test/outlier_gender.png)
+![outplier_boxplot](./raw/test/outlier_internet_quality.png)
+![outplier_boxplot](./raw/test/outlier_mental_health_rating.png)
+![outplier_boxplot](./raw/test/outlier_netflix_hours.png)
+![outplier_boxplot](./raw/test/outlier_parental_education_level.png)
+![outplier_boxplot](./raw/test/outlier_part_time_job.png)
+![outplier_boxplot](./raw/test/outlier_sleep_hours.png)
+![outplier_boxplot](./raw/test/outlier_social_media_hours.png)
+![outplier_boxplot](./raw/test/outlier_study_hours_per_day.png)
 
 #### Train
 
@@ -323,17 +344,45 @@ Pentru a detecta outliers am utilizat IQR (25th & 75th percentile)
 - extracurricular_participation outlier count: 178
 - exam_score outlier count: 1
 
-//TODO: Analiza
+'Outlierii' din part_time nu pot fi considerati ca fiind cu adevarat outlieri, 
+deoarece nr celor care lucreaza este mult mai mic decat al celor care nu muncesc. 
+Avand in vedere size-ul dataset-ului de antrenament este de 750, consider ca nu 
+este nevoie sa scapam de restul (in special considerand ca outlierii se afla in 
+features care au importanta destul de mare pentru target feature) in speranta 
+ca modelul va putea face predictii mai accurate. Diferit de datasetul de test sunt 
+outlierii din coloana de participare extracuriculara si cel din exam_score. Outlierii 
+din activitate extracuriculara sunt precum cel din part time care este un lucur de 
+asteptat avand in vedere ca majoritatea studentilor nu se implica in activitati extra 
+sau sa lucreze part time.
+
+Mai jos sunt boxplots pt outliers:
+
+![outplier_boxplot](./raw/train/outlier_age.png)
+![outplier_boxplot](./raw/train/outlier_attendance_percentage.png)
+![outplier_boxplot](./raw/train/outlier_diet_quality.png)
+![outplier_boxplot](./raw/train/outlier_exam_score.png)
+![outplier_boxplot](./raw/train/outlier_exercise_frequency.png)
+![outplier_boxplot](./raw/train/outlier_extracurricular_participation.png)
+![outplier_boxplot](./raw/train/outlier_gender.png)
+![outplier_boxplot](./raw/train/outlier_internet_quality.png)
+![outplier_boxplot](./raw/train/outlier_mental_health_rating.png)
+![outplier_boxplot](./raw/train/outlier_netflix_hours.png)
+![outplier_boxplot](./raw/train/outlier_parental_education_level.png)
+![outplier_boxplot](./raw/train/outlier_part_time_job.png)
+![outplier_boxplot](./raw/train/outlier_sleep_hours.png)
+![outplier_boxplot](./raw/train/outlier_social_media_hours.png)
+![outplier_boxplot](./raw/train/outlier_study_hours_per_day.png)
+
 
 ### Corelatie
 
 #### Test
 
-//TODO: Add png
+![Matrice corelare test](./raw/test/corr_heat.png)
 
 #### Train
 
-//TODO: Add png
+![Matrice corelare test](./raw/train/corr_heat.png)
 
 ### Relatie features - target
 
