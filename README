@@ -307,9 +307,11 @@ diferentei dintre adevarat si prezis.
 ``Root mean squared error: 1.4586042324581607e-14``
 
 Grafic eroare (predictie vs realitate):
+
 ![Grafic eroare](./raw/error_graph.png)
 
 Grafic rest (predictie vs rest):
+
 ![Grafic rest](./raw/residual_graph.png)
 
 Dupa cum se poate observa in primul grafic eroarea este mica, dar existenta, 
@@ -320,4 +322,5 @@ Pe baza erorii si pe baza graficelor concluzionez ca modelul functioneaza corect
 
 ## Bonus git:
 
-Repo-ul este public la linkul: https://github.com/RagnarokMew/regression-student-performance
+Repo-ul este public la linkul:
+https://github.com/RagnarokMew/regression-student-performance
