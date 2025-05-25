@@ -520,3 +520,6 @@ Pe baza erorii si pe baza graficelor concluzionez ca modelul functioneaza corect
 
 Repo-ul este public la linkul:
 https://github.com/RagnarokMew/regression-student-performance
+
+Toate fisierele: .csv intermediare, scripturi, ploturi (.pngs), Makefile 
+pentru transformarea markdown in pdf sunt pe repo-ul public.
