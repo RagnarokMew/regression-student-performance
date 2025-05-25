@@ -91,6 +91,14 @@ plt.grid(True, alpha=0.3)
 plt.savefig("../../raw/hist_sleep.png")
 plt.close()
 
+plt.hist(df['exam_score'], bins='auto', align='mid', color='lightskyblue', edgecolor='black')
+plt.title('Exam score ditribution of students')
+plt.xlabel('Exam score')
+plt.ylabel('Frequency')
+plt.grid(True, alpha=0.3)
+plt.savefig("../../raw/hist_exam.png")
+plt.close()
+
 ################################
 ## Categorial Values Plotting ##
 ################################
