@@ -2,8 +2,19 @@ import sys
 import numpy as np
 import pandas as pd
 
+##################
+## Load dataset ##
+##################
+
 csv_path = sys.argv[1]
+
 df = pd.read_csv(csv_path)
+
+############################
+## Filling missing values ##
+############################
+
+# NOTE: I know it generates warnings when run (check pdf), but it works, it's simple and it was easy to write 
 
 df['age'].fillna(df['age'].median(), inplace=True)
 df['study_hours_per_day'].fillna(df['study_hours_per_day'].median(), inplace=True)

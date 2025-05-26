@@ -2,8 +2,17 @@ import sys
 import numpy as np
 import pandas as pd
 
+##################
+## Load dataset ##
+##################
+
 csv_path = sys.argv[1]
+
 df = pd.read_csv(csv_path)
+
+##############################################
+## Mapping values (strings) to numeric ones ##
+##############################################
 
 df['gender'] = df['gender'].map({
     'Male': 0,

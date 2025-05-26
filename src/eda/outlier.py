@@ -2,10 +2,19 @@ import sys
 import pandas as pd
 import matplotlib.pyplot as plt
 
+##################
+## Load dataset ##
+##################
+
 csv_path = sys.argv[1]
+
 df = pd.read_csv(csv_path)
 
 numeric = df.select_dtypes(include='number')
+
+##############################
+## Calculating IQR for cols ##
+##############################
 
 for feature in numeric:
     q25th = df[feature].quantile(0.25)
@@ -17,4 +26,4 @@ for feature in numeric:
     plt.title(f"Outlier boxplot {feature}")
     plt.boxplot(df[feature])
     plt.savefig(f"../../raw/outlier_{feature}.png")
-    plt.close
+    plt.close()

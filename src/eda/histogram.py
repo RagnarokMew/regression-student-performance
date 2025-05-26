@@ -4,6 +4,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+##################
+## Load dataset ##
+##################
+
 csv_path = sys.argv[1]
 
 df = pd.read_csv(csv_path)

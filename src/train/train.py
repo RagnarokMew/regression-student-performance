@@ -4,6 +4,10 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 import matplotlib.pyplot as plt
 
+################################################
+## Loading datasets and splitting the targets ##
+################################################
+
 X_train = pd.read_csv("../../data/train.csv")
 y_train = X_train['exam_score']
 X_train.drop(columns='exam_score')
@@ -11,6 +15,10 @@ X_train.drop(columns='exam_score')
 X_test = pd.read_csv("../../data/test.csv")
 y_test = X_test['exam_score']
 X_test.drop(columns='exam_score')
+
+##########################################
+## Model for regression train + predict ##
+##########################################
 
 model = LinearRegression()
 model.fit(X_train, y_train)
@@ -20,6 +28,10 @@ y_pred = model.predict(X_test)
 rmse = np.sqrt(mean_squared_error(y_test, y_pred))
 
 print(f"Root mean squared error: {rmse}")
+
+#############################################
+## Plotting error graph and residual graph ##
+#############################################
 
 plt.scatter(y_test, y_pred, s=2, color='red', label='Model prediction')
 plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], '--', color='lightgrey', label='Real values')
